@@ -1,4 +1,4 @@
-package com.mapping.demo;
+package com.mapping.number;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -16,8 +16,8 @@ public class Application {
 		Map<Integer, Integer> numberMap = new HashMap<>();
 		numberMap.put(1, 10);
 		numberMap.put(2, 33);
-		MyNumberMapper mapper = new MyNumberMapper(numbers, numberMap);
-		mapper.mapNumbers();
+		NumberMap mapper = new NumberMap( numberMap);
+		mapper.map(numbers);
 
 
 	}
